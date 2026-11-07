@@ -7,7 +7,7 @@ export function MemberCard({ member, index }: { member: Member; index: number })
   const animClass = memberAnimations[index % memberAnimations.length];
 
   return (
-    <article className={`w-full overflow-hidden rounded-2xl text-center ${animClass}`}>
+    <article className={`w-full overflow-hidden rounded-2xl text-center  ${animClass}`}>
       {/* Header: jabatan */}
       {member.role ? (
         <h3 className="bg-my-primary px-3 py-1.5 font-roboto text-xs font-semibold text-white sm:text-sm">

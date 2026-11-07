@@ -218,8 +218,8 @@ export const homePage = {
   sambutan: {
     title: "Sambutan",
     images: [
-      { image: "/assets/divisi/inti/inti-ketua-muadz.webp", name: "Muadz", role: "Ketua HERO" },
-      { image: "/assets/divisi/inti/inti-wakil-ketua-abel.webp", name: "Abel", role: "Wakil Ketua HERO" },
+      { image: "/assets/divisi/inti/inti-ketua-muadz.webp", name: "Muhammad Mu'adz Ibda", role: "Ketua HERO" },
+      { image: "/assets/divisi/inti/inti-wakil-ketua-abel.webp", name: "Abriel Yosua Nathanael Leskona", role: "Wakil Ketua HERO" },
     ] as Member[],
     greeting:
       '"Assalamualaikum Warahmatullahi Wabarakatuh, Shalom, Om Swastyastu, Namo Buddhaya, Salam Kebajikan Bagi Kita Semua."',
@@ -441,17 +441,17 @@ export const divisions: DivisionPage[] = [
       ],
       coordinator: {
         image: "/assets/divisi/inti/inti-ketua-muadz.webp",
-        name: "Muadz",
+        name: "Muhammad Mu'adz Ibda",
         role: "Ketua Umum",
       },
       groups: [
         {
           members: [
-            { image: "/assets/divisi/inti/inti-wakil-ketua-abel.webp", name: "Abel", role: "Wakil Ketua" },
-            { image: "/assets/divisi/inti/inti-sekretaris-alang.webp", name: "Alang", role: "Sekretaris" },
-            { image: "/assets/divisi/inti/inti-wakil-sekretaris-hera.webp", name: "Hera", role: "Wakil Sekretaris" },
-            { image: "/assets/divisi/inti/inti-bendahara-aulia.webp", name: "Aulia", role: "Bendahara" },
-            { image: "/assets/divisi/inti/inti-wakil-bendahara-khofifah.webp", name: "Khofifah", role: "Wakil Bendahara" },
+            { image: "/assets/divisi/inti/inti-wakil-ketua-abel.webp", name: "Abriel Yosua Nathanael Leskona", role: "Wakil Ketua" },
+            { image: "/assets/divisi/inti/inti-sekretaris-alang.webp", name: "Muhammad Aslam Al-Fadillah", role: "Sekretaris" },
+            { image: "/assets/divisi/inti/inti-wakil-sekretaris-hera.webp", name: "Hera Andira", role: "Wakil Sekretaris" },
+            { image: "/assets/divisi/inti/inti-bendahara-aulia.webp", name: "Auliah Handayani Tahir", role: "Bendahara" },
+            { image: "/assets/divisi/inti/inti-wakil-bendahara-khofifah.webp", name: "Nurkhofifah", role: "Wakil Bendahara" },
           ],
         },
       ],
@@ -505,24 +505,24 @@ export const divisions: DivisionPage[] = [
       ],
       coordinator: {
         image: "/assets/divisi/riset/riset-koor-uchek.webp",
-        name: "Uchek",
+        name: "Muh. Uche Syaputra",
         role: "Koordinator Riset dan Pengembangan",
       },
       groups: [
         {
           members: [
-            { image: "/assets/divisi/riset/riset-abdi.webp", name: "Abdi", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-adit.webp", name: "Adit", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-aisyah.webp", name: "Aisyah", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-akbar.webp", name: "Akbar", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-anggun.webp", name: "Anggun", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-ayu.webp", name: "Ayu", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-cukur.webp", name: "Cukur", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-Damar.webp", name: "Damar", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-fathir.webp", name: "Fathir", role: "Anggota Riset" },
+            { image: "/assets/divisi/riset/riset-abdi.webp", name: "Muh. Abdi Setiawan Romi", role: "Anggota Riset" },
+            { image: "/assets/divisi/riset/riset-adit.webp", name: "Aditya Ahmad Reinaldy", role: "Anggota Riset" },
+            // { image: "/assets/divisi/riset/riset-aisyah.webp", name: "Aisyah", role: "Anggota Riset" },
+            // { image: "/assets/divisi/riset/riset-akbar.webp", name: "Akbar", role: "Anggota Riset" },
+            { image: "/assets/divisi/riset/riset-anggun.webp", name: "Anggun Anugrah Sulnas", role: "Anggota Riset" },
+            { image: "/assets/divisi/riset/riset-ayu.webp", name: "Sri Ayu", role: "Anggota Riset" },
+            { image: "/assets/divisi/riset/riset-cukur.webp", name: "Muhammad Syukran Husain", role: "Anggota Riset" },
+            { image: "/assets/divisi/riset/riset-Damar.webp", name: "Damar Kandi", role: "Anggota Riset" },
+            { image: "/assets/divisi/riset/riset-fathir.webp", name: "Abdul Fathir Zain", role: "Anggota Riset" },
             { image: "/assets/divisi/riset/riset-fikrank.webp", name: "Fikrank", role: "Anggota Riset" },
             { image: "/assets/divisi/riset/riset-Yonatan%20Rannu.webp", name: "Yonatan Rannu", role: "Anggota Riset" },
-            { image: "/assets/divisi/riset/riset-zahra.webp", name: "Zahra", role: "Anggota Riset" },
+            { image: "/assets/divisi/riset/riset-zahra.webp", name: "Nur Zahrah Indriani", role: "Anggota Riset" },
           ],
         },
       ],
@@ -600,19 +600,19 @@ export const divisions: DivisionPage[] = [
       ],
       coordinator: {
         image: "/assets/divisi/psdm/psdm-koor-anwar.webp",
-        name: "Anwar",
+        name: "Fahrul Septiawan",
         role: "Koordinator PSDM",
       },
       groups: [
         {
           members: [
-            { image: "/assets/divisi/psdm/psdm-aizah.webp", name: "Aizah", role: "Anggota PSDM" },
-            { image: "/assets/divisi/psdm/psdm-aji.webp", name: "Aji", role: "Anggota PSDM" },
-            { image: "/assets/divisi/psdm/psdm-aliando.webp", name: "Aliando", role: "Anggota PSDM" },
-            { image: "/assets/divisi/psdm/psdm-andir.webp", name: "Andir", role: "Anggota PSDM" },
-            { image: "/assets/divisi/psdm/psdm-eka.webp", name: "Eka", role: "Anggota PSDM" },
-            { image: "/assets/divisi/psdm/psdm-rani.webp", name: "Rani", role: "Anggota PSDM" },
-            { image: "/assets/divisi/psdm/psdm-revan.webp", name: "Revan", role: "Anggota PSDM" },
+            { image: "/assets/divisi/psdm/psdm-aizah.webp", name: "Nur Azisah Basir", role: "Anggota PSDM" },
+            { image: "/assets/divisi/psdm/psdm-aji.webp", name: "Muhammad Ismail Haji", role: "Anggota PSDM" },
+            { image: "/assets/divisi/psdm/psdm-aliando.webp", name: "Nur Aqmal Nurdin", role: "Anggota PSDM" },
+            { image: "/assets/divisi/psdm/psdm-andir.webp", name: "Andi Risawameqga", role: "Anggota PSDM" },
+            { image: "/assets/divisi/psdm/psdm-eka.webp", name: "Eka Tanduklangi", role: "Anggota PSDM" },
+            { image: "/assets/divisi/psdm/psdm-rani.webp", name: "Andi Maharani", role: "Anggota PSDM" },
+            { image: "/assets/divisi/psdm/psdm-revan.webp", name: "Muh. Revan", role: "Anggota PSDM" },
           ],
         },
       ],
@@ -650,16 +650,17 @@ export const divisions: DivisionPage[] = [
       ],
       coordinator: {
         image: "/assets/divisi/humas/humas-koor-amek.webp",
-        name: "Amek",
+        name: "Khumaedi",
         role: "Koordinator Humas",
       },
       groups: [
         {
           members: [
             { image: "/assets/divisi/humas/humas-asma.webp", name: "Asma", role: "Anggota Humas" },
-            { image: "/assets/divisi/humas/humas-fikri.webp", name: "Fikri", role: "Anggota Humas" },
-            { image: "/assets/divisi/humas/humas-putri.webp", name: "Putri", role: "Anggota Humas" },
-            { image: "/assets/divisi/humas/humas-zaky.webp", name: "Zaky", role: "Anggota Humas" },
+            { image: "/assets/divisi/humas/humas-fikri.webp", name: "Abdul Aziz Al Fiqri", role: "Anggota Humas" },
+            { image: "/assets/divisi/humas/humas-irgi.png", name: "Irgi Ahmad Saputra Irwan", role: "Anggota Humas" },
+            { image: "/assets/divisi/humas/humas-putri.webp", name: "Putri Kalsum", role: "Anggota Humas" },
+            { image: "/assets/divisi/humas/humas-zaky.webp", name: "Muhammad Yusuf Dzaky", role: "Anggota Humas" },
           ],
         },
       ],
