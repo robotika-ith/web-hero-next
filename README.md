@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is the Next.js port of the HERO static site from `../web-hero`.
+
+# HERO — Habibie Engineering Robotic of Organization
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build   # production build
+npm run start   # serve the production build
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project structure
 
-## Learn More
+```
+app/
+  layout.tsx              # fonts, metadata, header/footer
+  page.tsx                # home page
+  angkatan/page.tsx       # /angkatan
+  divisi/[slug]/page.tsx  # /divisi/inti, riset, psdm, humas
+  globals.css             # Tailwind v4 theme, keyframes, component classes
+components/
+  layout/                 # Header (mobile menu), Footer
+  sections/               # Contact, Proker grid, Berita carousel
+  divisions/              # shared division page view
+  angkatan/               # /angkatan page view
+  ui/                     # Icon, Img, Segments
+config/
+  content.ts              # ALL page copy, images, navigation and cards
+public/assets/            # images copied from ../web-hero/src/assets
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Editing content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Everything shown on the pages comes from [`config/content.ts`](config/content.ts):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `siteConfig` — name, description, logo, footer/background images, copyright.
+- `socials` — Instagram/TikTok/YouTube links used in the contact section and footer.
+- `navigation` — header dropdown, angkatan link and footer links.
+- `homePage` — hero, about, sambutan, visi/misi, filosofi logo and berita cards.
+- `divisions` — one entry per division page (hero, tupoksi, structure, program kerja).
+  Member photos keep their natural height (no cropping); set `memberLayout: "masonry"`
+  on a division page to render its member list as variable-height masonry columns.
+- `angkatanPage` — the `/angkatan` page (hero, intro, and one entry per angkatan).
 
-## Deploy on Vercel
+Text segments are arrays of `{ text, className }` so words can be highlighted with
+Tailwind classes, e.g. `{ text: "H", className: "text-my-primary" }`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes on the conversion
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- The original Alpine.js interactions were replaced with React:
+  header mobile menu, daisyUI dropdowns (CSS) and the berita carousel.
+- Scroll-reveal animations (`slide-left`, `slide-right`, `slide-up`, `slide-down`)
+  are kept as CSS `view()` animations in `app/globals.css`.
+- Styles were ported from `src/styles/input.css` to `app/globals.css`
+  (Tailwind v4 + daisyUI).
+- Asset paths changed from `/src/assets/...` to `/assets/...`.
